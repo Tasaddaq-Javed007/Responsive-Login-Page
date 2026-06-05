@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.left {
+    flex: 1;
+    background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6") center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    color: black;
+    max-width: 300px;
+}
+
+.overlay h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: black;
+
+
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.form-box {
+    width: 350px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.social {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.social img {
+    width: 18px;
+    height: 18px;
+}
+
+.social:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    color: gray;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: gray;
+}
+
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #9c7a2b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+.google {
+    border: 1px solid #db4437;
+}
+
+.twitter {
+    border: 1px solid #1da1f2;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        height: 200px;
+    }
+
+    .overlay {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+}
